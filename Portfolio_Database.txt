@@ -1,0 +1,19 @@
+First: 
+Importing the excel data into sql server --> also need to download microsoft access database redistribution.
+
+Second: 
+When I imported the data there were some columns which were expected to be in integer or float values
+but they were present in varchar --> so I modified the varchar to real values with the help of alter command.
+
+Third: 
+We cannot use aliasing names in displaying the columns and hence for this purpose we can either use CTE or we can use 
+Temp Table.
+
+Fourth:
+I also learnt about "partition by" command while performing the cumulative sum of new_vaccinations.
+
+Fifth:
+We can also use 'cast' to change the datatype for that particular query instead of changing/altering the column.
+For eg : Death_count is varchar
+MAX(Death_count) --> not give an error but will give you wrong answer
+MAX(cast(Death_count as int)) --> this will correct an error
